@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         //Delete the item from the model, notify the adapter
         items.remove(position);
         itemsAdapter.notifyItemRemoved(position);
+        Toast.makeText(getApplicationContext(), "Item successfully deleted!", Toast.LENGTH_SHORT).show();
         saveItems();
       }
     };
